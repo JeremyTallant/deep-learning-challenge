@@ -25,8 +25,10 @@ Using the information we provided in the Challenge files, follow the instruction
 1. Read in the `charity_data.csv` to a Pandas DataFrame, and be sure to identify the following in your dataset:
 
     * What variable(s) are the target(s) for your model?
+    The target variable(s) for the model is `IS_SUCCESSFUL`, as it represents the binary classification outcome variable of whether a charity donation was successful or not.
   
     * What variable(s) are the feature(s) for your model?
+    The feature variables for the model are all the other columns in the DataFrame, excluding `IS_SUCCESSFUL`.
   
 2. Drop the `EIN` and `NAME` columns.
 
