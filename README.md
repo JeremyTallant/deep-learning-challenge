@@ -22,15 +22,7 @@ Using your knowledge of Pandas and scikit-learn’s `StandardScaler()`, you’ll
 
 Using the information we provided in the Challenge files, follow the instructions to complete the preprocessing steps.
 
-1. Read in the `charity_data.csv` to a Pandas DataFrame, and be sure to identify the following in your dataset:
-
-   * What variable(s) are the target(s) for your model?
-    
-    The target variable(s) for the model is `IS_SUCCESSFUL`, as it represents the binary classification outcome variable of whether a charity donation was successful or not.
-  
-    * What variable(s) are the feature(s) for your model?
-    
-    The feature variables for the model are all the other columns in the DataFrame, excluding `IS_SUCCESSFUL`.
+1. Read in the `charity_data.csv` to a Pandas DataFrame:
     
 <img width="1213" alt="Screenshot 2023-03-03 at 4 43 30 PM" src="https://user-images.githubusercontent.com/112406455/222846018-ec501cf0-b4cd-49f1-be39-4248d2a7de0d.png">    
   
@@ -149,5 +141,31 @@ The report should contain the following:
     * What steps did you take in your attempts to increase model performance?
     
 **Summary**: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+## Report
+### Overview
+The purpose of this analysis is to create a binary classifier using a deep learning neural network to predict the success rate of applicants for funding from Alphabet Soup, a nonprofit organization. The provided dataset contains information on over 34,000 organizations, including metadata such as application type, affiliated sector of industry, government organization classification, use case for funding, income classification, funding amount requested, and whether the money was used effectively. The analysis involves preprocessing the dataset by dropping unnecessary columns, encoding categorical variables, and splitting the data into training and testing datasets. The neural network model is then designed, trained, and evaluated to determine its loss and accuracy. Finally, the model is optimized using various methods such as adjusting input data, adding more neurons and hidden layers, using different activation functions, and adjusting the number of epochs. The ultimate goal is to achieve a predictive accuracy higher than 75% and save the optimized model as an HDF5 file.
+### Results
+#### Data Prepocessing
+
+   * What variable(s) are the target(s) for your model?
+   
+   The target variable(s) for the model is `IS_SUCCESSFUL`, as it represents the binary classification outcome variable of whether a charity donation was successful or not.
+   
+   * What variable(s) are the feature(s) for your model?
+   
+   The feature variables for the model are all the other columns in the DataFrame, excluding `IS_SUCCESSFUL`.
+   
+   * What variable(s) should be removed from the input data because they are neither targets nor features?
+ 
+   As part of the preprocessing phase for our analysis, we have identified that the EIN or Employee Identification Number does not contain relevant information for our predictive model. As such, we will exclude this variable from our feature and target selection, as it is not pertinent to our analysis.
+<img width="1214" alt="Screenshot 2023-03-03 at 5 39 43 PM" src="https://user-images.githubusercontent.com/112406455/222855344-3e17fc01-362e-4df1-8a58-ebcd56c34d98.png">
+
+### Compiling, Training, and Evaluating the Model
+* How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
+For this neural network model, I selected three hidden layers with 20, 27, and 3 neurons respectively. I chose this combination after several iterations and tests with different numbers of neurons and layers, and found that this configuration produced the best results in terms of accuracy and loss.
+For the activation functions, I chose ReLU for the first hidden layer to introduce non-linearity in the model and improve its performance. I selected sigmoid for the second and third hidden layers as it is better suited for binary classification tasks such as this one. Finally, for the output layer, I used sigmoid activation function to ensure the output is between 0 and 1, which is needed for binary classification.
+<img width="1212" alt="Screenshot 2023-03-03 at 5 43 52 PM" src="https://user-images.githubusercontent.com/112406455/222855753-e2469da0-19bb-40bc-bbb5-cf354f837b84.png">
+
 ## References
 IRS. Tax Exempt Organization Search Bulk Data Downloads. [https://www.irs.gov/](https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads)
