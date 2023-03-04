@@ -195,5 +195,13 @@ The project is structured as follows:
 * `Models` folder that contains four individual model folders (`1`, `2`, `3`, and `4`) that contain the models saved every 5 epochs and the final model in HDF5 format.
 * `Notebooks` folder that contains the four notebooks: the initial model notebook and three optimization notebooks.
 * `README.md` file that provides a summary of the project and instructions on how to reproduce the results.
+## Instructions for Reproducing the Results
+**Note: The notebooks were created and tested using Google Colab. Some package installations and paths may need to be modified if running in a different environment.**
+1. Clone the repository to your local machine.
+2. Navigate to the project directory in the command line.
+3. Ensure that the necessary dependencies are installed by running pip install -r requirements.txt.
+4. Navigate to the notebooks directory and run AlphabetSoupCharity.ipynb in your preferred IDE to preprocess the data and train the initial deep learning model. The final model will be saved as AlphabetSoupCharity.h5 in the models directory.
+5. If you wish to optimize the model, navigate to the notebooks directory and run AlphabetSoupCharity_Optimization.ipynb. The final optimized model will be saved as AlphabetSoupCharity_Optimization.h5 in the models directory.
+Note: There are multiple optimization notebooks to try out, such as `AlphabetSoupCharity_Optimization2.ipynb`, and `AlphabetSoupCharity_Optimization3.ipynb`.
 ## References
 IRS. Tax Exempt Organization Search Bulk Data Downloads. [https://www.irs.gov/](https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads)
