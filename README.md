@@ -183,7 +183,7 @@ During the optimization process, the `EIN` column was dropped as it was not cons
 
 <img width="1212" alt="Screenshot 2023-03-03 at 6 50 15 PM" src="https://user-images.githubusercontent.com/112406455/222863358-4ab3a147-211d-4fba-ab89-203ca1235312.png">
 
-#### Summary
+### Summary
 In summary, the deep learning model using TensorFlow and Keras was able to achieve a predictive accuracy of 78% in classifying the success of organizations funded by Alphabet Soup based on their features. The model underwent several optimization attempts, including dropping columns, binning categorical variables, adding hidden layers and neurons, and trying different activation functions, among other adjustments. While the target predictive accuracy of 75% was achieved, it required significant optimization attempts to reach that level.
 
 One recommendation for solving this classification problem would be to try a different type of model, such as a Random Forest Classifier or a Support Vector Machine (SVM). These models have been shown to be effective in binary classification problems and may be able to achieve a higher accuracy without the need for extensive optimization attempts. Additionally, they can handle both numerical and categorical variables and can handle outliers and imbalanced datasets well, which may be present in this dataset. Therefore, it may be worth exploring these alternative models as a potential solution to the classification problem.
