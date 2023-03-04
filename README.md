@@ -157,7 +157,7 @@ The purpose of this analysis is to create a binary classifier using a deep learn
    
    * What variable(s) should be removed from the input data because they are neither targets nor features?
  
-   As part of the preprocessing phase for our analysis, we have identified that the EIN or Employee Identification Number does not contain relevant information for our predictive model. As such, we will exclude this variable from our feature and target selection, as it is not pertinent to our analysis.
+   As part of the preprocessing phase for the analysis, I have identified that the EIN or Employee Identification Number does not contain relevant information for our predictive model. As such, I excluded this variable from the feature and target selection, as it is not pertinent to the analysis.
    
 <img width="1214" alt="Screenshot 2023-03-03 at 5 39 43 PM" src="https://user-images.githubusercontent.com/112406455/222855344-3e17fc01-362e-4df1-8a58-ebcd56c34d98.png">
 
@@ -177,7 +177,7 @@ Based on my analysis, I have successfully developed a deep neural network model 
 
 * What steps did you take in your attempts to increase model performance?
 
-During the optimization process, the EIN column was dropped as it was not considered as a target nor a feature. However, after multiple attempts to optimize the model, it was found that keeping the NAME column improved the model accuracy. A cutoff value was chosen, and a list of names to replace was created using value counts. Any name that had less than 10 occurrences was replaced with "Other". Similarly, a cutoff value was chosen for the CLASSIFICATION column and any classification with fewer than 2000 occurrences was replaced with "Other". The binning was checked to ensure that it was successful.
+During the optimization process, the `EIN` column was dropped as it was not considered as a target nor a feature. However, after multiple attempts to optimize the model, it was found that keeping the `NAME` column improved the model accuracy. A cutoff value was chosen, and a list of names to replace was created using value counts. Any name that had less than 10 occurrences was replaced with "Other". Similarly, a cutoff value was chosen for the `CLASSIFICATION` column and any classification with fewer than 2000 occurrences was replaced with "Other". The binning was checked to ensure that it was successful.
 
 <img width="1215" alt="Screenshot 2023-03-03 at 6 50 08 PM" src="https://user-images.githubusercontent.com/112406455/222863305-394e4d01-1ae1-4fdf-9467-d19528341fa2.png">
 
