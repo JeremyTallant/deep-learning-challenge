@@ -188,5 +188,12 @@ In summary, the deep learning model using TensorFlow and Keras was able to achie
 
 One recommendation for solving this classification problem would be to try a different type of model, such as a Random Forest Classifier or a Support Vector Machine (SVM). These models have been shown to be effective in binary classification problems and may be able to achieve a higher accuracy without the need for extensive optimization attempts. Additionally, they can handle both numerical and categorical variables and can handle outliers and imbalanced datasets well, which may be present in this dataset. Therefore, it may be worth exploring these alternative models as a potential solution to the classification problem.
 
+## File Organization and Structure
+The project is structured as follows:
+
+`Resources` folder that contains the `charity_data.csv` dataset.
+`Models` folder that contains four individual model folders (`1`, `2`, `3`, and `4`) that contain the models saved every 5 epochs and the final model in HDF5 format.
+`Notebooks` folder that contains the four notebooks: the initial model notebook and three optimization notebooks.
+`README.md` file that provides a summary of the project and instructions on how to reproduce the results.
 ## References
 IRS. Tax Exempt Organization Search Bulk Data Downloads. [https://www.irs.gov/](https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads)
