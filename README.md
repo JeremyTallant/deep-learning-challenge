@@ -158,6 +158,7 @@ The purpose of this analysis is to create a binary classifier using a deep learn
    * What variable(s) should be removed from the input data because they are neither targets nor features?
  
    As part of the preprocessing phase for our analysis, we have identified that the EIN or Employee Identification Number does not contain relevant information for our predictive model. As such, we will exclude this variable from our feature and target selection, as it is not pertinent to our analysis.
+   
 <img width="1214" alt="Screenshot 2023-03-03 at 5 39 43 PM" src="https://user-images.githubusercontent.com/112406455/222855344-3e17fc01-362e-4df1-8a58-ebcd56c34d98.png">
 
 ### Compiling, Training, and Evaluating the Model
