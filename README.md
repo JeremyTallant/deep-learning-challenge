@@ -161,7 +161,7 @@ The purpose of this analysis is to create a binary classifier using a deep learn
    
 <img width="1214" alt="Screenshot 2023-03-03 at 5 39 43 PM" src="https://user-images.githubusercontent.com/112406455/222855344-3e17fc01-362e-4df1-8a58-ebcd56c34d98.png">
 
-### Compiling, Training, and Evaluating the Model
+#### Compiling, Training, and Evaluating the Model
 * How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
 For this neural network model, I selected three hidden layers with 20, 27, and 3 neurons respectively. I chose this combination after several iterations and tests with different numbers of neurons and layers, and found that this configuration produced the best results in terms of accuracy and loss.
@@ -182,6 +182,11 @@ During the optimization process, the EIN column was dropped as it was not consid
 <img width="1215" alt="Screenshot 2023-03-03 at 6 50 08 PM" src="https://user-images.githubusercontent.com/112406455/222863305-394e4d01-1ae1-4fdf-9467-d19528341fa2.png">
 
 <img width="1212" alt="Screenshot 2023-03-03 at 6 50 15 PM" src="https://user-images.githubusercontent.com/112406455/222863358-4ab3a147-211d-4fba-ab89-203ca1235312.png">
+
+#### Summary
+In summary, the deep learning model using TensorFlow and Keras was able to achieve a predictive accuracy of 78% in classifying the success of organizations funded by Alphabet Soup based on their features. The model underwent several optimization attempts, including dropping columns, binning categorical variables, adding hidden layers and neurons, and trying different activation functions, among other adjustments. While the target predictive accuracy of 75% was achieved, it required significant optimization attempts to reach that level.
+
+One recommendation for solving this classification problem would be to try a different type of model, such as a Random Forest Classifier or a Support Vector Machine (SVM). These models have been shown to be effective in binary classification problems and may be able to achieve a higher accuracy without the need for extensive optimization attempts. Additionally, they can handle both numerical and categorical variables and can handle outliers and imbalanced datasets well, which may be present in this dataset. Therefore, it may be worth exploring these alternative models as a potential solution to the classification problem.
 
 ## References
 IRS. Tax Exempt Organization Search Bulk Data Downloads. [https://www.irs.gov/](https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads)
