@@ -191,9 +191,9 @@ One recommendation for solving this classification problem would be to try a dif
 ## File Organization and Structure
 The project is structured as follows:
 
-`Resources` folder that contains the `charity_data.csv` dataset.
-`Models` folder that contains four individual model folders (`1`, `2`, `3`, and `4`) that contain the models saved every 5 epochs and the final model in HDF5 format.
-`Notebooks` folder that contains the four notebooks: the initial model notebook and three optimization notebooks.
-`README.md` file that provides a summary of the project and instructions on how to reproduce the results.
+* `Resources` folder that contains the `charity_data.csv` dataset.
+* `Models` folder that contains four individual model folders (`1`, `2`, `3`, and `4`) that contain the models saved every 5 epochs and the final model in HDF5 format.
+* `Notebooks` folder that contains the four notebooks: the initial model notebook and three optimization notebooks.
+* `README.md` file that provides a summary of the project and instructions on how to reproduce the results.
 ## References
 IRS. Tax Exempt Organization Search Bulk Data Downloads. [https://www.irs.gov/](https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads)
