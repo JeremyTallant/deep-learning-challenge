@@ -195,6 +195,7 @@ The project is structured as follows:
 * `Models` folder that contains four individual model folders (`1`, `2`, `3`, and `4`) that contain the models saved every 5 epochs and the final model in HDF5 format.
 * `Notebooks` folder that contains the four notebooks: the initial model notebook and three optimization notebooks.
 * `README.md` file that provides a summary of the project and instructions on how to reproduce the results.
+* `requirements.txt` file: This file lists all the necessary dependencies to run the project.
 ## Instructions for Reproducing the Results
 **Note: The notebooks were created and tested using Google Colab. Some package installations and paths may need to be modified if running in a different environment.**
 1. Clone the repository to your local machine.
